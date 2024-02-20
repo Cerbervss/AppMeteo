@@ -43,7 +43,7 @@ cerca.addEventListener("click", () => {
 });
 
 function fattoApposta() {
-    const APIKey = "Inserire la tua chiave API";
+    const APIKey = "Inserire la tua chiave API"; // <----------------------------------------- INSERIRE QUI LA CHIAVE API
     const city = ricerca.value;
     if (city === "") return;
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKey}`)
