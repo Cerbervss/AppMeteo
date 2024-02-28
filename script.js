@@ -202,6 +202,7 @@ pos.addEventListener("click", () => {
     } else {
         const lon = Number(ricerca.getAttribute("lon"));
         const lat = Number(ricerca.getAttribute("lat"));
-        window.location.href = `https://www.google.com/maps/@?api=1&map_action=map&center=${lat}%2C${lon}`;
+        // window.location.href = `https://www.google.com/maps/@?api=1&map_action=map&center=${lat}%2C${lon}`;
+        window.open(`https://www.google.com/maps/@?api=1&map_action=map&center=${lat}%2C${lon}`, "_blank");
     }
 })
